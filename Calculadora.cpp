@@ -2,6 +2,7 @@
  * Autores: 
  *  Andrés Felipe Valencia 
  *  Ricardo Valencia
+ *  Jorge Reyes
  * Fecha de creacion: 26-04-2017
  */
  
