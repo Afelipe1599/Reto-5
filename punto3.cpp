@@ -10,23 +10,39 @@
  #include <string>
  using namespace std;
  
- void recolectarDatos(string **, &datos){
+ void recolectarDatos(string ** &datos){
+ 	
 	 for(int i=0;i<3;i++){
-		 for(int j=0;j<2;j++{
+		 for(int j=0;j<2;j++){
+		 	if (j==0){
+		 		string a;
+		 		cout << "Ingrese nombre de persona #" << i+1 << endl;
+		 		cin >> a;
+		 	}
+		 	else {
+		 		cout << "Ingrese apellido de persona #" << i+1 << endl;
+		 		cin >> a;
+		 	}
+		 	datos[i][j]= a;
 		 }
 	 }
  }
  
- void recolectarSalariosPersona(double *&salarios, string**&datos){
+ /*void recolectarSalariosPersona(double *&salarios, string**&datos){
+
  }
-			 
+
+ void imprimirResultados(double * &salarios, string ** & datos){
+
+ }
+*/			 
 	 
  
  
  int main(){
 	 string datos;
-	 string ** arrayDatosPersona;
+	 string ** arrayDatosPersona[3][2];
 	 double * salariosPersona;
-	 recolectarDatos(arrayDatosPerona, datos);
-	 recolectarSalariosPersona(salariosPersona, arrayDatosPersona);
+	 recolectarDatos(arrayDatosPerona[3][2]);
+	 //recolectarSalariosPersona(salariosPersona, arrayDatosPersona);
  }
