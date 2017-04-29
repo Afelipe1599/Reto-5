@@ -10,12 +10,14 @@
  #include <string>
  using namespace std;
  
+ string a;
+
  void recolectarDatos(string ** &datos){
  	
 	 for(int i=0;i<3;i++){
 		 for(int j=0;j<2;j++){
 		 	if (j==0){
-		 		string a;
+		 		
 		 		cout << "Ingrese nombre de persona #" << i+1 << endl;
 		 		cin >> a;
 		 	}
@@ -43,6 +45,7 @@
 	 string datos;
 	 string ** arrayDatosPersona[3][2];
 	 double * salariosPersona;
-	 recolectarDatos(arrayDatosPerona[3][2]);
+	 recolectarDatos(arrayDatosPersona);
+	 cout << ** arrayDatosPersona[0][0] << endl;
 	 //recolectarSalariosPersona(salariosPersona, arrayDatosPersona);
  }
